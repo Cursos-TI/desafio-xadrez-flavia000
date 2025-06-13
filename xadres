@@ -1,0 +1,8 @@
+# xadres - Chess game main module placeholder
+
+def main():
+    print("Bem-vindo ao Xadres! (Desafio Xadrez)")
+    # Aqui você pode iniciar a lógica do jogo de xadrez
+
+if __name__ == "__main__":
+    main()
