@@ -1,5 +1,5 @@
-include <estud.h>
+include<stude.h>
 
 int main() {
-    //
+    // movimentacao de tabuleiro
     
