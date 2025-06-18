@@ -1,5 +1,52 @@
 include<stude.h>
 
 int main() {
-    // movimentacao de tabuleiro
+    //jogo xadrez
+    // cria o tabuleiro
+    char tabuleiro[8][8]{
+        {'T', 'C', 'B, 'Q', 'K', 'B', 'C', 'T'}
+        {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'}
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',}
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',}
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',}
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',}
+        {'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'}
+        {'T', 'C', 'B, 'Q', 'K', 'B', 'C', 'T'}
+        };
+        // movimemto do bispo 
+       
+        printf("Obispo tem que mover 5 casa em diagonal superio direita\n");
+        scanf("%d", &movimento);
+        for (int i = 0; i < movimento; i++) 
+            int linha, coluna;
+            printf("Move o bispo para a linha (0-7) e coluna (0-7):");
+            scraf("%d %d", &linha, coluna);
+            tabuleiro[linha][coluna] = 'B';
     
+    }
+       // movimento de torre
+        printf("Torre tem que mover 5 casas a direita");
+        scanf("%d", &movimento);
+        for (int i = 0; i < movimento; i++){
+            int linha, coluna;
+            printf("Move a torre para a linha (0-5) e coluna (0-0):");
+            scanf("%d %d", &linha,&coluna);
+            tabuleiro[linha][coluna] = 'T';
+        }
+        // movimento de rainha
+        printf("Rainha tem que mover 8 casas a direita");
+        scanf("%d", &movimento);
+        for (int i = 0; i < movimento; i++) {
+             int linha, coluna;
+             printf(" Move a rainha 8 casas a direita");
+             scanf("%d %d", &casas, &direita);
+             tabuleiro[casas][direita] = 'Q';
+        
+        return 0;
+    }
+    
+
+
+
+
+

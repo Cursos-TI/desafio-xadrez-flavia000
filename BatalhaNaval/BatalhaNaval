@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int tabuleiro[5][5] = {0};
+
+    // Navio vertical (coluna 1, linhas 1-3)
+    for (int i = 1; i <= 3; i++) {
+        tabuleiro[i][1] = 1;
+        printf("Navio vertical: (%d, %d)\n", i, 1);
+    }
+
+    // Navio horizontal (linha 3, colunas 2-4)
+    for (int j = 2; j <= 4; j++) {
+        tabuleiro[3][j] = 2;
+        printf("Navio horizontal: (%d, %d)\n", 3, j);
+    }
+
+    return 0;
+}
